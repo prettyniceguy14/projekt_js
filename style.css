@@ -195,4 +195,8 @@ label{
         width: 98.5%;
         margin-bottom: 10px;
     }
+
+    .block-section{
+        margin: 0;
+    }
 }
