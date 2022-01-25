@@ -29,7 +29,7 @@ function currentDate(){
 }
 
 class Block{
-    constructor(index, time, data,diff, previousHash = ''){
+    constructor(index, time, data, diff, previousHash = ''){
         this.index = index;
         this.time = time;
         this.data = data;
@@ -40,7 +40,7 @@ class Block{
     }
 
     async calculateHash(){
-        var result =  await sha1(this.index + this.previousHash + this.time + JSON.stringify(this.data) + this.nonce);
+        var result =  await sha1(this.index + this.previousHash + this.time + this.data +  this.diff + this.nonce);
         return result;
     }
 

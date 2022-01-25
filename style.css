@@ -61,6 +61,8 @@ label{
     width: 100%;
     color: #b1b1b1;
     padding: 15px 20px;
+    font-family: "Montserrat";
+    font-size: 0.88em;
 }
 
 .id-section{
@@ -102,6 +104,7 @@ label{
     font-weight: 600;
     background: #c495fdbf;
     user-select: none;
+    font-family: "Montserrat";
 }
 
 .button-elem:disabled{
