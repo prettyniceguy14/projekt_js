@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Implementacja Blockchain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="panel-box">
+        <div>Stan blockchain'a: <b id="bc-state">Valid</b></div>
+        <div>Trudność sieci: <b id="bc-difficulty">5</b></div>
+        <div>
+            <button id="inc-diff">+</button>
+            <button id="dec-diff">-</button>
+        </div>
+    </div>
+    <div id="loading">
+        <img id="loading-image" src="img/loading.gif" alt="Loading..." />
+        <h2>Wydobywanie...</h2>
+      </div>
+    <div class="container">
+    </div>
+    <div class="panel-box">
+        <button class="button-elem action-button panel-box-add-btn" id="add-button">Dodaj</button>   
+    </div>
+    <script src="js/blockchain.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
