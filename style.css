@@ -101,6 +101,12 @@ label{
     color: #000000;
     font-weight: 600;
     background: #c495fdbf;
+    user-select: none;
+}
+
+.button-elem:disabled{
+    color: rgb(235, 235, 235);
+    background-color: #3a3a3a;
 }
 
 .invalid-hash-text{

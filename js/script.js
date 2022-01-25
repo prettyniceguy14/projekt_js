@@ -78,6 +78,7 @@ function render(chain){
             //genesis block, disable textfields
             newDiv.querySelector("input[name='time']").disabled = "true";
             newDiv.querySelector("input[name='data']").disabled = "true";
+            newDiv.querySelector(".action-button").disabled = "true";
         }
 
         if(invalidBlockIds.includes(block.index)){
@@ -118,6 +119,8 @@ function render(chain){
 
         newDiv.children[5].querySelector("button").addEventListener("click", function(r){
             const blockID =  r.target.parentElement.parentElement.children[0].children[1].value;
+            if(blockID == 0)
+                return;
             loadingObj.style.display = "flex";
             chain.chain[blockID].previousHash = chain.chain[blockID - 1].hash;
             chain.chain[blockID].mineBlock(chain.difficulty).then(() => {
